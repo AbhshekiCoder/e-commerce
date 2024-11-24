@@ -1,0 +1,102 @@
+[debug] [2024-11-19T10:08:45.949Z] ----------------------------------------------------------------------
+[debug] [2024-11-19T10:08:45.953Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-19T10:08:45.953Z] CLI Version:   13.25.0
+[debug] [2024-11-19T10:08:45.954Z] Platform:      win32
+[debug] [2024-11-19T10:08:45.954Z] Node Version:  v18.15.0
+[debug] [2024-11-19T10:08:45.955Z] Time:          Tue Nov 19 2024 15:38:45 GMT+0530 (India Standard Time)
+[debug] [2024-11-19T10:08:45.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-19T10:08:45.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-19T10:08:45.964Z] > authorizing via signed-in user (aggour124421@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\react\e-commerce\backend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-11-19T10:09:41.292Z] Checked if tokens are valid: false, expires at: 1729869400423
+[debug] [2024-11-19T10:09:41.293Z] Checked if tokens are valid: false, expires at: 1729869400423
+[debug] [2024-11-19T10:09:41.293Z] > refreshing access token with scopes: []
+[debug] [2024-11-19T10:09:41.295Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-19T10:09:41.295Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-19T10:09:42.907Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-19T10:09:42.908Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-19T10:09:42.933Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-11-19T10:09:42.934Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"12154545","name":"e-commerce"}
+[debug] [2024-11-19T10:09:45.657Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-11-19T10:09:45.658Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-11-19T10:09:47.088Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-11-19T10:11:46.204Z] ----------------------------------------------------------------------
+[debug] [2024-11-19T10:11:46.206Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-19T10:11:46.207Z] CLI Version:   13.25.0
+[debug] [2024-11-19T10:11:46.207Z] Platform:      win32
+[debug] [2024-11-19T10:11:46.208Z] Node Version:  v18.15.0
+[debug] [2024-11-19T10:11:46.208Z] Time:          Tue Nov 19 2024 15:41:46 GMT+0530 (India Standard Time)
+[debug] [2024-11-19T10:11:46.209Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-19T10:11:46.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-19T10:11:46.217Z] > authorizing via signed-in user (aggour124421@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\react\e-commerce\backend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-19T10:12:05.133Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:05.134Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:05.136Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-11-19T10:12:06.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-11-19T10:12:06.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project commerce-cc6d6 (-Commerce) 
+[info] 
+=== Apphosting Setup
+[debug] [2024-11-19T10:12:09.400Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:09.401Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:09.401Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/commerce-cc6d6/billingInfo [none]
+[debug] [2024-11-19T10:12:12.602Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/commerce-cc6d6/billingInfo 200
+[debug] [2024-11-19T10:12:12.603Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/commerce-cc6d6/billingInfo {"name":"projects/commerce-cc6d6/billingInfo","projectId":"commerce-cc6d6","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2024-11-19T10:12:12.696Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:12.697Z] Checked if tokens are valid: true, expires at: 1732014581908
+[debug] [2024-11-19T10:12:12.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/commerce-cc6d6 [none]
+[debug] [2024-11-19T10:12:15.008Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/commerce-cc6d6 200
+[debug] [2024-11-19T10:12:15.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/commerce-cc6d6 {"projectId":"commerce-cc6d6","projectNumber":"553702957945","displayName":"-Commerce","name":"projects/commerce-cc6d6","resources":{"hostingSite":"commerce-cc6d6"},"state":"ACTIVE","etag":"1_94b6cc45-3842-455d-9b76-0b1538d05c13"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
